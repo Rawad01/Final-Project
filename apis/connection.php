@@ -8,7 +8,6 @@ $dbname = "applicationdb";
 $cnnx = new mysqli($server, $username, $password, $dbname);
 
 if($cnnx->connect_error){
-	die("connection failed :)");
+	die("connection failed." . $cnnx->connect_error);
 }
-
 ?>
