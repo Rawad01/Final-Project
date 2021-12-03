@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fullname"
+
         android:layout_width="348dp"
         android:layout_height="58dp"
         android:translationY="-80dp"
@@ -17,13 +17,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fullname" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
+
         android:layout_width="348dp"
         android:layout_height="58dp"
         android:translationY="-10dp"
@@ -33,13 +34,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
+
         android:layout_width="348dp"
         android:layout_height="58dp"
         android:translationY="60dp"
@@ -49,6 +51,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password" />
@@ -101,11 +104,10 @@
         app:layout_constraintVertical_bias="0.657" />
 
     <Button
-        android:id="@+id/signout"
+        android:id="@+id/signin"
         android:layout_width="107dp"
         android:layout_height="58dp"
         android:backgroundTint="#259CD5"
-        android:onClick="Sign_In"
         android:text="Sign In"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,11 +117,10 @@
         app:layout_constraintVertical_bias="0.943" />
 
     <Button
-        android:id="@+id/signin"
+        android:id="@+id/signup"
         android:layout_width="107dp"
         android:layout_height="58dp"
         android:backgroundTint="#259CD5"
-        android:onClick="Sign_Up"
         android:text="Sign Up"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
