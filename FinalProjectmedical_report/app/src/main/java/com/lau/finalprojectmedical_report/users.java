@@ -1,13 +1,15 @@
 package com.lau.finalprojectmedical_report;
 
-public class userclass {
+public class users {
+
     private int id;
     private String username, email;
 
-    public userclass(int id, String username, String email) {
+    public users(int id, String username, String email) {
         this.id = id;
         this.username = username;
         this.email = email;
+
     }
 
     public int getId() {
@@ -21,4 +23,5 @@ public class userclass {
     public String getEmail() {
         return email;
     }
+
 }
