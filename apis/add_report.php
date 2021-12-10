@@ -21,8 +21,8 @@ if(isset($_GET["apicall"])){
 		$signature = md5($_POST["signature"]);
 		$date = $_POST["date"];
 	
-		$stmt = $cnnx->prepare("SELECT id FROM reports WHERE full_name = ? OR date = ?");
-		$stmt->bind_param("ss", $username, $date);
+		$stmt = $cnnx->prepare("SELECT id FROM reports WHERE full_name = ?");
+		$stmt->bind_param("s", $username);
 		$stmt->execute();
 		$stmt->store_result();
  

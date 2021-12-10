@@ -21,6 +21,9 @@
             android:exported="true"/>
         <activity
             android:name=".SettingsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".addreportActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

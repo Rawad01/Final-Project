@@ -37,7 +37,7 @@ public class ReportActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                startActivity(new Intent(ReportActivity.this, SettingsActivity.class));
+                startActivity(new Intent(ReportActivity.this, addreportActivity.class));
             }
         });
 
