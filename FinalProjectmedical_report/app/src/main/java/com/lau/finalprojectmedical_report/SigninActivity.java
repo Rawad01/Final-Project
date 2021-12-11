@@ -78,7 +78,10 @@ public class SigninActivity extends AppCompatActivity {
                         );
                         Preferences.getInstance(getApplicationContext()).userLogin(user);
                         finish();
-                        startActivity(new Intent(getApplicationContext(), ReportActivity.class));
+                        //startActivity(new Intent(getApplicationContext(), ReportActivity.class));
+                        Intent intent = new Intent(getApplicationContext(), ReportActivity.class);
+                        intent.putExtra("username", userJson.getString("username"));
+                        startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
                     }

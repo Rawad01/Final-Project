@@ -2,9 +2,12 @@ package com.lau.finalprojectmedical_report;
 
 public class users {
 
-    private int id;
-    private String username, email;
+    public int id;
+    public String username, email;
 
+    public users(){
+
+    }
     public users(int id, String username, String email) {
         this.id = id;
         this.username = username;
