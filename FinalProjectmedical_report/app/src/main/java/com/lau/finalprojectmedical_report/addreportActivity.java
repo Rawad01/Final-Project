@@ -71,7 +71,7 @@ public class addreportActivity extends AppCompatActivity{
         final String past_medH = past_mh.getText().toString().trim();
         final String ex_findings = examination_findings.getText().toString().trim();
         final String Signature = signature.getText().toString().trim();
-        int a = Integer.parseInt(Age);
+
         if (TextUtils.isEmpty(Full_name)) {
             fullName.setError("Please enter full name");
             fullName.requestFocus();
@@ -180,7 +180,7 @@ public class addreportActivity extends AppCompatActivity{
                         );
                         Preferences.getInstance(getApplicationContext()).userLogin(user);
                         finish();
-                        startActivity(new Intent(getApplicationContext(), ReportActivity.class));
+                        startActivity(new Intent(getApplicationContext(), SigninActivity.class));
                     } else {
                         Toast.makeText(getApplicationContext(), "Something went wrong ", Toast.LENGTH_SHORT).show();
                     }
